@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+    </com.google.android.youtube.player.YouTubePlayerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/player"
+        android:layout_marginBottom="@dimen/margin_padding_size_large">
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:fontFamily="sans-serif-light"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorTextTitle"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginTop="@dimen/margin_padding_size_small"
+            android:layout_marginBottom="@dimen/margin_padding_size_xsmall"
+            android:layout_marginRight="@dimen/margin_padding_size_medium"
+            android:layout_marginLeft="@dimen/margin_padding_size_medium"/>
+
+        <TextView
+            android:id="@+id/channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="@dimen/text_size_small"
+            android:layout_marginRight="@dimen/margin_padding_size_medium"
+            android:layout_marginLeft="@dimen/margin_padding_size_medium"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

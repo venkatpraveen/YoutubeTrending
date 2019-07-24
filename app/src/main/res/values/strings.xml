@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">YoutubeTrending</string>
+
+
+    <string name="network_error">Please check your internet connection</string>
+    <string name="error_detail">Oops... Something went wrong! Error message: </string>
+</resources>
